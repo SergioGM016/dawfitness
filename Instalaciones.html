@@ -1,0 +1,73 @@
+<!--
+Autor= Sergio García Martín
+Fecha= 10/02/2017
+Licencia= gpl3.0
+Version= 1.0
+Descripcion=                      
+-->
+
+<!doctype html>
+<html>
+<head>
+    <title>Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/fonts.css" />
+</head>
+<body>
+
+
+<!--SLIDER DE IMAGENES SE PUEDE AÑADIR TEXTO A CADA DIV CON LAS IMAGENES-->
+<div class="main">
+    <div class="slides">
+        <div><img src="images/fondo.jpg" alt=""></div>
+        <div><img src="images/fondo.jpg" alt=""></div>
+        <div><img src="images/fondo.jpg" alt=""></div>
+    </div>
+</div>
+
+
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="assets/js/jquery.slides.js"></script>
+<script>
+    $(function(){
+        $(".slides").slidesjs({
+            play: {
+                active: true,
+                // [boolean] Generate the play and stop buttons.
+                // You cannot use your own buttons. Sorry.
+                effect: "slide",
+                // [string] Can be either "slide" or "fade".
+                interval: 3000,
+                // [number] Time spent on each slide in milliseconds.
+                auto: true,
+                // [boolean] Start playing the slideshow on load.
+                swap: true,
+                // [boolean] show/hide stop and play buttons
+                pauseOnHover: false,
+                // [boolean] pause a playing slideshow on hover
+                restartDelay: 2500
+                // [number] restart delay on inactive slideshow
+            }});});
+
+</script>
+</body>
+</html>
+
+<!--
+Copyright (C) 2017 Sergio García Martín
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->

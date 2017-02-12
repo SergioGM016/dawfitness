@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--
+Autor= Elena-Trabajo
+Fecha= 10 de feb. de 2017
+Licencia= gpl30
+Version= 1.0
+Descripcion=Descripción general del contenido de este archivo html. Por ejemplo, 
+                 formulario de alta de un cliente en la web.                        
+-->
+
+<!--
+Copyright (C) 2017 Elena-Trabajo
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Actividades</title>
+<meta charset="utf-8" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, user-scalable=no" />
+<link rel="stylesheet" href="assets/css/main.css" />
+<link rel="stylesheet" href="assets/css/main2.css" />
+</head>
+<body>
+	<!-- Header -->
+	<header id="header">
+		<div class="inner">
+			<a href="index.html" class="logo"><img src="images/logoo.png"></a>
+			<nav id="nav">
+				<a href="index.html">Dawfitness</a> <a href="Actividades.html">Actividades
+
+				</a> <a href="Horarios.html">Horarios</a> <a href="Profesionales.html">Profesionales</a>
+				<a href="Instalaciones.html">Instalaciones</a> <a
+					href="Contacto.html">Contacto</a>
+			</nav>
+		</div>
+	</header>
+	<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+	<main>
+<section class="contenedorformulario">
+		<form id="datos2016" method="post" action="" onsubmit="">
+			<div class="row">
+			<label class="col-2">Nombre*:</label>
+			 <input type="text" class="col-2" name=obligatorios id="nombre"
+						required="required" maxlength="10"
+						oninvalid="this.value='';setCustomValidity('El campo nombre sólo admite hasta 10 caracteres')"
+						pattern="^\D{1,10}$" oninput="desmarcarTerminos()">
+						<div class="col-8"></div>
+						</div>
+					
+		</form>
+		</section>
+	</main>
+
+</body>
+</html>
